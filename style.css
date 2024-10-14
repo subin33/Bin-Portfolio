@@ -63,6 +63,7 @@ nav{
   left: 10%;
   background-color: rgba(255, 255, 255,0.5);
   backdrop-filter: blur(10px);
+  z-index: 999;
 }
 
 .menu {
@@ -95,8 +96,80 @@ nav{
   align-items: center;
   padding: 5% 12%;
   gap: 50px;
+  position: relative;
 }
 
+.hero_bg_shape {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+.hero_bg_shape1{
+  animation:  rotate1 6s infinite linear;
+}
+
+.hero_bg_shape2 {
+  left: 85%;
+  animation: fade_top 3s infinite linear;
+}
+
+.hero_bg_shape3 {
+  top: 60%;
+  left: 80%;
+  animation: fade_top 3s infinite linear;
+
+}
+
+.hero_bg_shape4 {
+  top:80%;
+  left: -5%;
+  animation:  rotate1 6s infinite linear;
+}
+@keyframes rotate1 {
+  0%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade_top {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.top_bg_text{
+  position: absolute;
+  top: -5%;
+  left: -15%;
+  font-size: 15rem;
+  font-weight: 600;
+  -webkit-text-stroke: 1px #a5a2a2;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0.5;
+  z-index: -1;
+}
+.bottom_bg_text{
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  font-size: 15rem;
+  font-weight: 600;
+  -webkit-text-stroke: 1px #a5a2a2;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0.5;
+  z-index: -1;
+}
 .hero_img {
   width: 35%;
   position: relative;
@@ -105,15 +178,15 @@ nav{
 
 .hero_shape {
   position: absolute;
-  top: 49%;
-  left: 29%;
+  top: 52%;
+  left: 22%;
   transform: translate(-50%, -50%);
   z-index: -1;
-  width: 28%;
+  width: 35%;
   height: 55%;
 }
 .border_shape {
-  width: 30%;
+  width: 38%;
   height: 60%;
 }
 .hero_img img {
@@ -134,12 +207,20 @@ nav{
   line-height: 6rem;
   font-family: var(--sec-font);
   color: var(--dark-color);
+  position: relative;
+}
+.text_shape{
+  position: absolute;
+  top: -60%;
+  right: -15%;
+  width: 100px;
 }
 .hero_content h2 {
   font-size: 2rem;
   color: var(--prime-color);
   font-weight: 500;
 }
+
 .hero_content h3 {
   margin: 10px 0;
   font-size: 1.5rem;
@@ -176,3 +257,5 @@ button:hover{
 .hero_btns button:last-child{
   width: 150px;
 }
+
+/* ABOUT SECTION */
