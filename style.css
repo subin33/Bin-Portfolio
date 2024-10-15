@@ -259,3 +259,165 @@ button:hover{
 }
 
 /* ABOUT SECTION */
+.about {
+  flex-direction: column;
+  gap: 50px;
+}
+
+.headings {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.headings h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.headings h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.anim_line_box {
+  width: 2px;
+  height: 120px;
+  border-radius: 10px;
+  background-color: var(--black-color);
+  position: relative;
+}
+
+.anim_line_box:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: var(--black-color);
+  animation: shape_up_down 4s infinite linear;
+}
+
+@keyframes shape_up_down {
+  0% {
+      top: 0;
+  }
+  50% {
+      top: 100%;
+  }
+  100% {
+      top: 0;
+  }
+}
+
+.about_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  place-content: center;
+  place-items: center;
+  gap: 20px;
+}
+
+.about_left{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.about_left h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: 600;
+  -webkit-text-stroke: 1px var(--dark-color);
+  color: transparent;
+}
+
+.about_left p{
+  font-size: 1rem;
+  font-weight: 300;
+  color: #999;
+}
+
+.client_name{
+  display: flex;
+  flex-direction: column;
+}
+
+.about_left h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark-color);
+  line-height: 2rem;
+}
+
+.about_left p:last-child{
+  margin-bottom: 10px;
+}
+
+.about_left img {
+  width: 100px;
+  height: 50%;
+}
+
+.about_img img {
+  border-radius: 200px;
+}
+
+.about_img {
+  position: relative;
+  padding: 10px;
+}
+
+.about_img:after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 200px;
+  border: 1px solid var(--dark-color);
+}
+
+.about_info{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about_det{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #FAF1C6;
+  padding: 2%;
+}
+
+.value {
+  font-size: 1.5rem;
+  width: 100px;
+  height: 70px;
+  border-radius: 100%;
+  border: 1px solid var(--dark-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.det_info{
+  display: flex;
+  flex-direction: column;
+
+}
