@@ -279,10 +279,8 @@ button:hover{
   color: var(--dark-color);
 }
 
-.headings h1 {
-  font-size: 4rem;
-  font-weight: 600;
-  color: var(--dark-color);
+.headings h1 span{
+  color: var(--prime-color)
 }
 
 .anim_line_box {
@@ -524,4 +522,36 @@ button:hover{
 .about_det:hover .about_det_icon{
   top: -20%;
   opacity: 1;
+}
+
+/*  EDUCATION EXPERIENCE */
+.education_experience {
+  flex-direction: column;
+  gap: 50px;
+}
+
+.education_btn{
+  /* width: 30%; */
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid var(--dark-color);
+}
+
+.education_btn button:active,
+.education_btn button:focus {
+    background-color: var(--prime-color);
+    color: var(--white-color);
+    border-color: var(--prime-color);
+}
+
+.education_container{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.education_left,
+.experience_right{
+  display: flex;
+  flex-direction: column;
 }
