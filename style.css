@@ -548,10 +548,94 @@ button:hover{
   display: flex;
   align-items: center;
   gap: 50px;
+  position: relative;
 }
 
 .education_left,
 .experience_right{
   display: flex;
   flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.education_box,
+.experience_box{
+  width: 100%;
+  padding: 20px;
+  background-color: #f7f4fb;
+  border: 1px solid var(--black-color);
+border-radius: 10px;
+position: relative;
+}
+.education_box::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 28px;
+  height: 2px;
+  background-color: var(--black-color);
+}
+
+.experience_box::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: 25px;
+  height: 2px;
+  background-color: var(--black-color);
+}
+
+
+.education_box h2,
+.experience_box h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.education_box h2 span,
+.experience_box h2 span{
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.education_box p,
+.experience_box p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.show_box{
+  opacity: 0;
+}
+
+
+.gap_line{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: var(--black-color);
+}
+
+.gap_line::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -9px;
+  width: 20px;
+  height: 2px;
+  background-color: var(--black-color);
+}
+
+.gap_line::before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: -9px;
+  width: 20px;
+  height: 2px;
+  background-color: var(--black-color);
 }
